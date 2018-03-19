@@ -1,0 +1,185 @@
+p {
+color: red;
+text-align: center;
+}
+
+form{
+padding:  10px;
+} 
+
+.well {
+background-color: #70dbdb !important;
+}
+
+.bg-light{
+background-color: #61605a !important ;
+}
+
+nav{
+padding :  10px !important;
+}
+
+body {
+background-color: #fff2e6;
+}
+
+.right{
+display: inline;
+float: right !important;
+text-align: right !important;
+}
+
+.accordion {
+    background-color: lightblue;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 30%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 3s !important;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc; 
+}
+
+.panel {
+    padding: 0 20px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    width: 450px;
+    height: 141px;
+    position: relative;
+    left: -327px;
+    border: 3px solid #73AD21;
+}
+
+.cabin li{
+	display: inline-block;
+	cursor: pointer;
+}
+
+.seats {
+    display: block;
+    position: relative;
+    padding-left: 4px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.cabin label {
+	position: relative;
+	padding-left: 30px;
+}
+/* Hide the browser's default checkbox */
+.seats input {
+	position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    top: 4px;
+    left: 0;
+    width: 20px;
+    z-index: 9999;
+    height: 20px;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #999999;
+    text-align: center;
+}  
+.seats:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.seats input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.seats input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.seats .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.seats .checkmark .hidden:after {
+	display: none !important;
+}
+.row--close{
+	margin-top: -20px;
+	padding-top: 0px !important;
+}
+.row--1{
+	margin-top: -6px;
+	padding-bottom:  0px !important;
+}
+.row-center{
+	margin-top: -12px;
+    padding-left: 375px;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+
+
+
+
